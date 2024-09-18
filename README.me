@@ -1,0 +1,17 @@
+Contexto: 
+Se me asignó un proyecto para realizar el desarrollo de un sistema de recomendación de peliculas. En este proyecto, formé parte de un entorno de trabajo "real" en que una empresa requería de un sistema de recomendación sin desarrollar. Como Data Scientist, me encargué de desarrollar el sistema de recomendación en su totalidad, desde la recolección, transformación y carga de datos hasta la capacitación y implementación del modelo de aprendizaje automático. La transformación y preparación de los datos disponibles para su uso en el modelo requería una gran cantidad de trabajo como Data Engineer porque eran inmaduros en ese momento.
+
+Desarrollo: 
+1. Ingeniería de datos
+Extracción, Transformación y Limpieza de datos (ETL): se extrajeron los datos relevantes para hacer las transformaciones y limpiezas correspondientes. 
+Datos limpios: se extrajeron los archivos con los datos limpios, como: para el desarrollo del api, las de peliculas y sus recomendaciones
+2. ML: 
+Análisis Exploratorio de los datos (EDA): visualizaciones de los análisis para comprender las características de los datos y extraer información valiosa para el desarrollo del modelo 
+Entrenamiento de los modelos: utilizados para el sistema de recomendación
+3. Desarrollo de la API
+En el archivo principal (main.py) se puede acceder a las funciones (endpoints) necesarios para que la API esté disponible y accesible a posibles consultas futuras. 
+
+Machine Learning 
+Se utilizó el modelo basado en contenido utilizando la librería scikit-learn, con la técnica de vectorización TF-IDF para crear una matriz de vectores que describiera el contenido de las películas en función de sus sinopsis. También, se calculó la similitud entre cada par de películas utilizando la medida de similitud del coseno, y luego se ordenaron según su puntuación de similitud.
+Para esto, se utilizó el dataset limpio (movies_recomendacion.parquet) con los atributos 'title' y 'overview_clean'
+El sistema de recomendación utilizó 5 modelos para devolver una lista de 5 peliculas similares, ordenadas para la similitud de su puntuación. 
