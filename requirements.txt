@@ -4,3 +4,17 @@ numpy
 pandas
 uvicorn
 scikit-learn
+seaborn
+matplotlib
+calendar
+wordcloud
+os 
+json
+datetime
+ast
+requests
+re
+nltk
+pyspark
+gensim
+fuzzywuzzy
