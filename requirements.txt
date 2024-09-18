@@ -6,7 +6,6 @@ uvicorn
 scikit-learn
 seaborn
 matplotlib
-calendar
 wordcloud
 os 
 json
