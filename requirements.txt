@@ -6,14 +6,4 @@ uvicorn
 scikit-learn
 seaborn
 matplotlib
-wordcloud
-os 
-json
-datetime
-ast
-requests
-re
-nltk
-pyspark
-gensim
-fuzzywuzzy
+
